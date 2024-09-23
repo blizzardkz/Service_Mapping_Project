@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="5a59424783730210950111d6feaad35d" extends="cmdb_ci_computer" label="TinyCoreLinux" max_length="40" name="x_1127653_gns3_ser_u_cmdb_ci_tinycorelinux" type="collection"/>
+</database>

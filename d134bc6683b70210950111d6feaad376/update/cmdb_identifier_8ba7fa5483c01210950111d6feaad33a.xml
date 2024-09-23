@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="cmdb_identifier">
+    <cmdb_identifier action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <applies_to>x_1127653_gns3_ser_u_cmdb_ci_busybox</applies_to>
+        <description/>
+        <independent>false</independent>
+        <name>Busybox rule</name>
+        <sys_class_name>cmdb_identifier</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-08-12 08:39:48</sys_created_on>
+        <sys_id>8ba7fa5483c01210950111d6feaad33a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_1127653_gns3_ser_u_cmdb_ci_busybox</sys_name>
+        <sys_package display_value="GNS3 Service Mapping" source="x_1127653_gns3_ser">d134bc6683b70210950111d6feaad376</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="GNS3 Service Mapping">d134bc6683b70210950111d6feaad376</sys_scope>
+        <sys_update_name>cmdb_identifier_8ba7fa5483c01210950111d6feaad33a</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-08-12 08:39:48</sys_updated_on>
+    </cmdb_identifier>
+</record_update>

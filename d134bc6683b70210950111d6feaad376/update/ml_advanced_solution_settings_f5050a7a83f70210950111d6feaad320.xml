@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="ml_advanced_solution_settings">
+    <ml_advanced_solution_settings action="INSERT_OR_UPDATE">
+        <ml_capability_definition display_value="application_suggestion">25050a7a83f70210950111d6feaad31a</ml_capability_definition>
+        <solution_parameters display_value="Levenshtein Distance">668619e753220010d1dcddeeff7b125a</solution_parameters>
+        <sys_class_name>ml_advanced_solution_settings</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-08-07 13:07:38</sys_created_on>
+        <sys_id>f5050a7a83f70210950111d6feaad320</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="GNS3 Service Mapping" source="x_1127653_gns3_ser">d134bc6683b70210950111d6feaad376</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="GNS3 Service Mapping">d134bc6683b70210950111d6feaad376</sys_scope>
+        <sys_update_name>ml_advanced_solution_settings_f5050a7a83f70210950111d6feaad320</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-08-07 13:07:38</sys_updated_on>
+        <user_inputs/>
+    </ml_advanced_solution_settings>
+</record_update>

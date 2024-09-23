@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sa_pattern">
+    <sa_pattern action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <ci_type>x_1127653_gns3_ser_u_cmdb_ci_tinycorelinux</ci_type>
+        <cpattern_type>3</cpattern_type>
+        <description/>
+        <directory>false</directory>
+        <enforce_proc_classy>false</enforce_proc_classy>
+        <invoke_per_account>false</invoke_per_account>
+        <metadata_id>328b0acb83730210950111d6feaad372</metadata_id>
+        <name>TinyCoreLinuxDetector</name>
+        <ndl>pattern {&#13;
+	metadata {&#13;
+		id = "328b0acb83730210950111d6feaad372"&#13;
+		name = "TinyCoreLinuxDetector"&#13;
+		description = ""&#13;
+		citype = "x_1127653_gns3_ser_u_cmdb_ci_tinycorelinux"&#13;
+	}&#13;
+	identification {&#13;
+		name = "TinyCoreLinux Identifi\u00EBr"&#13;
+		entry_point {type = "*"}&#13;
+		find_process_strategy {strategy = NONE}&#13;
+		step {&#13;
+			name = "Get IP address"&#13;
+			runcmd_to_var {&#13;
+				cmd = "ifconfig"&#13;
+				execution_mode = "DEFAULT"&#13;
+				var_names = "ip_address"&#13;
+				parsing_strategy = delimited_parsing {&#13;
+					include_lines_pattern = "Bcast"&#13;
+					exclude_lines_pattern = "inet6"&#13;
+					delimiters = " "&#13;
+					selected_positions = 1&#13;
+					line_seperator = ":"&#13;
+				}&#13;
+				if_not_found_do = nop {}&#13;
+				cache_flag = 0&#13;
+			}&#13;
+		}&#13;
+		step {&#13;
+			name = "Confirm TinyCore"&#13;
+			runcmd_to_var {&#13;
+				cmd = "uname -a"&#13;
+				execution_mode = "DEFAULT"&#13;
+				var_names = "name"&#13;
+				parsing_strategy = delimited_parsing {&#13;
+					include_lines_pattern = "Linux"&#13;
+					delimiters = " "&#13;
+					selected_positions = 3&#13;
+				}&#13;
+				if_not_found_do = nop {}&#13;
+				cache_flag = 0&#13;
+			}&#13;
+		}&#13;
+	}&#13;
+}&#13;
+</ndl>
+        <parent/>
+        <serverless>false</serverless>
+        <source/>
+        <sys_class_name>sa_pattern</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-08-08 08:14:34</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>328b0acb83730210950111d6feaad372</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>TinyCoreLinuxDetector</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="GNS3 Service Mapping" source="x_1127653_gns3_ser">d134bc6683b70210950111d6feaad376</sys_package>
+        <sys_policy/>
+        <sys_replace/>
+        <sys_scope display_value="GNS3 Service Mapping">d134bc6683b70210950111d6feaad376</sys_scope>
+        <sys_update_name>sa_pattern_328b0acb83730210950111d6feaad372</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-08-09 14:32:49</sys_updated_on>
+        <version/>
+    </sa_pattern>
+</record_update>

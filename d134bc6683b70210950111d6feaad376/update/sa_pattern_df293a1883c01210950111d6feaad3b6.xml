@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sa_pattern">
+    <sa_pattern action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <ci_type>x_1127653_gns3_ser_u_cmdb_ci_busybox</ci_type>
+        <cpattern_type>1</cpattern_type>
+        <description/>
+        <directory>false</directory>
+        <enforce_proc_classy>false</enforce_proc_classy>
+        <invoke_per_account>false</invoke_per_account>
+        <metadata_id>df293a1883c01210950111d6feaad3b6</metadata_id>
+        <name>Busybox Detector</name>
+        <ndl>pattern {&#13;
+	metadata {&#13;
+		id = "df293a1883c01210950111d6feaad3b6"&#13;
+		name = "Busybox Detector"&#13;
+		description = ""&#13;
+		citype = "x_1127653_gns3_ser_u_cmdb_ci_busybox"&#13;
+	}&#13;
+	identification {&#13;
+		name = "Busybox Detector"&#13;
+		entry_point {type = "cmdb_ci_endpoint_http"}&#13;
+		find_process_strategy {strategy = LISTENING_PORT}&#13;
+		step {&#13;
+			name = "Busybox Commandline Match"&#13;
+			match {&#13;
+				contains {&#13;
+					get_attr {"process.commandLine"}&#13;
+					"busybox"&#13;
+				}&#13;
+				terminate_op = terminate&#13;
+				terminate_msg = ""&#13;
+			}&#13;
+		}&#13;
+		step {&#13;
+			name = "get install directory"&#13;
+			runcmd_to_var {&#13;
+				cmd = "which busybox"&#13;
+				execution_mode = "DEFAULT"&#13;
+				var_names = "install_directory"&#13;
+				parsing_strategy = delimited_parsing {&#13;
+					selected_positions = 1&#13;
+				}&#13;
+				if_not_found_do = nop {}&#13;
+				cache_flag = 0&#13;
+			}&#13;
+		}&#13;
+	}&#13;
+}&#13;
+</ndl>
+        <parent/>
+        <serverless>false</serverless>
+        <source/>
+        <sys_class_name>sa_pattern</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-08-12 08:46:23</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>df293a1883c01210950111d6feaad3b6</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>Busybox Detector</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="GNS3 Service Mapping" source="x_1127653_gns3_ser">d134bc6683b70210950111d6feaad376</sys_package>
+        <sys_policy/>
+        <sys_replace/>
+        <sys_scope display_value="GNS3 Service Mapping">d134bc6683b70210950111d6feaad376</sys_scope>
+        <sys_update_name>sa_pattern_df293a1883c01210950111d6feaad3b6</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-08-12 09:19:31</sys_updated_on>
+        <version/>
+    </sa_pattern>
+</record_update>

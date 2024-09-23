@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="62c1475c83041210950111d6feaad345" extends="cmdb_ci_appl" label="Busybox Application" max_length="40" name="x_1127653_gns3_ser_busy" type="collection"/>
+</database>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="discovery_classy_proc">
+    <discovery_classy_proc action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <condition table="cmdb_running_process">nameSTARTSWITHbusybox^command=./busybox httpd -p 80 -h /usr/local/httpd/bin/^EQ<item endquery="false" field="name" goto="false" newquery="false" operator="STARTSWITH" or="false" value="busybox"/>
+            <item endquery="false" field="command" goto="false" newquery="false" operator="=" or="false" value="./busybox httpd -p 80 -h /usr/local/httpd/bin/"/>
+            <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
+        </condition>
+        <create_install_sw>false</create_install_sw>
+        <disabled>false</disabled>
+        <match_criteria>Any</match_criteria>
+        <name>ga_x_1127653_gns3_ser_busy</name>
+        <order>10000</order>
+        <product_categories/>
+        <relation_type display_value="Runs on::Runs">60bc4e22c0a8010e01f074cbe6bd73c3</relation_type>
+        <script><![CDATA[// This script gets run when something gets classified]]></script>
+        <sys_class_name>discovery_classy_proc</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-08-12 09:24:11</sys_created_on>
+        <sys_id>11d1cf9c83041210950111d6feaad358</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>ga_x_1127653_gns3_ser_busy</sys_name>
+        <sys_package display_value="GNS3 Service Mapping" source="x_1127653_gns3_ser">d134bc6683b70210950111d6feaad376</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="GNS3 Service Mapping">d134bc6683b70210950111d6feaad376</sys_scope>
+        <sys_update_name>discovery_classy_proc_11d1cf9c83041210950111d6feaad358</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-08-12 09:24:11</sys_updated_on>
+        <table>x_1127653_gns3_ser_busy</table>
+        <test_with/>
+    </discovery_classy_proc>
+</record_update>
